@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: urss-final
+    env: php
+    buildCommand: composer install --no-dev --optimize-autoloader
+    startCommand: php -S 0.0.0.0:$PORT -t .
+    envVars:
+      - key: DB_HOST
+        value: your-render-mysql-host
+      - key: DB_NAME
+        value: urss
+      - key: DB_USER
+        value: your-db-user
+      - key: DB_PASS
+        value: your-db-password
+
+databases:
+  - name: urss-db
+    databaseName: urss
+    user: urss_user

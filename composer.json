@@ -1,0 +1,11 @@
+{
+    "name": "urss/portal",
+    "description": "University Research Submission System",
+    "type": "project",
+    "require": {
+        "php": ">=8.0"
+    },
+    "scripts": {
+        "start": "php -S 0.0.0.0:8000 -t ."
+    }
+}
